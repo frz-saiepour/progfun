@@ -5,6 +5,13 @@ object intsets {
 	val t2 = t1 incl 5 incl 6 incl 2 incl 4   //> t2  : IntSet = {{.2.}3{{.4.}5{.6.}}}
 	val t3 = t1 incl 4 incl 5 incl 2 incl 6   //> t3  : IntSet = {{.2.}3{.4{.5{.6.}}}}
 	
+	//val a: Array[NonEmpty] = Array(new NonEmpty(1, Empty, Empty))
+	//val b: Array[IntSet] = a
+
+	val a1: List[NonEmpty] = List(new NonEmpty(1, Empty, Empty))
+                                                  //> a1  : List[NonEmpty] = List({.1.})
+	val b2: List[IntSet] = a1                 //> b2  : List[IntSet] = List({.1.})
+	
 }
 
 
